@@ -1,0 +1,161 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7e9b7;
+    color: #4a3f35;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #6b4226;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #8a2e1a 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav {
+    text-align: center;
+    padding: 10px;
+}
+
+header .nav-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #8a2e1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+header .nav-button:hover {
+    background: #4a3f35;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #8a2e1a;
+    color: #fff;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #4a3f35;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav {
+        padding: 5px;
+    }
+
+    header .nav-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form label, form input, form textarea {
+        margin-top: 5px;
+        padding: 8px;
+    }
+
+    form input[type="submit"] {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header .nav-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    form label, form input, form textarea {
+        padding: 6px;
+    }
+
+    form input[type="submit"] {
+        padding: 6px;
+    }
+}
